@@ -1,0 +1,15 @@
+Index: flib/core/db/init.php
+Facebook Inc.
+===================================================================
+--- flib/core/db/init.php
++++ flib/core/db/init.php
+@@ -1104,6 +1104,7 @@
+  *  @author markslee
+  */
+
+ $database->mysql_connect($db, $user, $pass);
+ if(!$database) {
+ 	$database->retry($db2);
+ }
+
+ // Is that right using?
